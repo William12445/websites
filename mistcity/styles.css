@@ -1,0 +1,178 @@
+﻿*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  padding: 1em 0px;
+  background-color:#13132b;
+}
+/* <<<<<<<header */
+header{
+  width: 100%;
+  height: 750px;
+  margin: 0px;
+}
+
+.intro-text{
+  font-family: 'Black Ops One', cursive;
+  text-align: center;
+  font-size: 3em;
+  width: 0px;
+  overflow: hidden;
+  margin: 150px auto ;
+  white-space: nowrap;
+  background-image: linear-gradient(155deg, #fb7419, #bc1429, #319197);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.intro-text.active{
+  animation: typeIn 2s steps(28) forwards;
+}
+@keyframes typeIn {
+  to { width: 19ch; }
+}
+/*<<<<<clouds */
+
+.waveright {
+  position: absolute;
+  width: 700px;
+  height: 380px;
+  top: 200px;
+  right: 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-image: url(img/underwaveright.png);
+  animation:right 10s forwards;
+}
+@keyframes right {
+  to {background-position-x: 200px;}
+}
+.waveleft {
+  position: absolute;
+  width: 700px;
+  height: 380px;
+  top: 200px;
+  left: 0px;
+  background-size: contain;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-image: url(img/underwaveleft.png);
+  animation:left 10s forwards;
+}
+@keyframes left {
+  to {background-position-x: -200px;}
+}
+.wavebot{
+  position: absolute;
+  width: 100%;
+  min-width: 1000px;
+  height: 900px;
+  top: 100px;
+  left: 0px;
+  align-content: center;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(img/upperwave.png);
+  animation:cloudup 5s forwards ;
+}
+@keyframes cloudup {
+  to {background-position-y: 200px;}
+}
+/* clouds>>>>>*/
+/* header>>>>> */
+
+/* <<<<<contents */
+#contents{
+  width: 100%;
+  height: 500px;
+  min-width: 1200px;
+}
+.box{
+  width: 200px;
+  height: 200px;
+  transition: transform 0.5s, opacity 0.5s;
+  color: #fff;
+  font-weight: bold;
+}
+.box.left{
+  width: 300px;
+  height: 230px;
+  margin:100px 200px 0px 200px;
+  font-family: 'Black Ops One';
+  background-image: url(img/moon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 5s, opacity 9s;
+  transform: translateX(-200px);
+  opacity: 0;
+}
+.box.bottom1{
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  min-width: 1100px;
+  left: 0px;
+  margin-top: 100px;
+  font-family: 'Black Ops One';
+  font-size: 30px;
+  padding:0px 0px 0px 300px;
+  background-image: url(img/apartmentback.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 5s, opacity 8s;
+  transform: translateY(10px) ;
+  opacity: 0;
+}
+.box.bottom2{
+  width: 500px;
+  height: 600px;
+  margin-left: 60%;
+  margin-top: -100px;
+  font-family: 'Black Ops One';
+  text-align: left;
+  background-image: url(img/apartment.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 5s, opacity 4s;
+  transform: translateY(80px) ;
+  opacity: 0;
+}
+/* .box.bottom3{
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  left: 800px;
+  margin-top: -50px;
+  background-image: url(img/apartment.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 5s, opacity 8s;
+  transform: translateY(70px) ;
+  opacity: 0;
+} */
+.box.right{
+  transform: translateX(200px);
+  opacity: 0;
+  background-color: #473BF0;
+}
+.box.top{
+  transform: translateY(-200px) rotate(360deg);
+  opacity: 0;
+  background-color: #3D2645;
+}
+
+.box.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.loader{
+  text-align: center;
+}

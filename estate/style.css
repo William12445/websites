@@ -1,0 +1,231 @@
+body{
+	height: 100%;
+    background-color: black;
+    color: white;
+}
+
+header {
+	width: 800px;
+	height: 70px;
+	margin: 20px auto 40px auto;
+	position: relative;
+    background-color: transparent;
+}
+header h1 {
+	margin : 0;
+	position: absolute;
+}
+nav {
+	position: absolute;
+    right: 200px;
+}
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+nav ul li {
+    padding:10px 20px;
+	float: left;
+}
+#loginbtn {
+    padding: 10px 20px;
+    margin: 20px 20px;
+    position: relative;
+    float: right;
+}
+
+#main ul{
+	color: black;
+	list-style-type: none;
+	padding: 5px 10px; 
+	background-color: aliceblue;
+	width: 550px ; 
+	height: 60px; 
+	border-radius: 20px;
+}
+#main ul li{
+	float: left;
+	margin-left: 10px;
+	
+}
+#main ul li input{
+	background-color: white;
+	border: solid gray 1px ;
+	border-radius: 5px;
+	margin-right: 5px;
+	width: 120px;
+	height: 10px;
+	padding: 10px;
+	
+}  
+#main ul li button{
+	height: 40px;
+	width: 40px;
+	padding: 0;
+	margin:10px 0px 0px 10px;
+	background-image: url(images/search.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50px;
+	border:solid dimgray 0.5px;
+	background-color: rgb(22, 231, 161);
+}
+article table tr td{
+	width: 400px;
+	text-align: center;
+}
+/* #images ul{
+	list-style-type: none;
+	float: left;
+}
+#images ul li{
+	float: left;
+}
+.pl{
+	width: 300px;
+	height: 350px;
+	background-color: aquamarine;
+	margin-right: 10px;
+}
+.ps{
+	margin-right: 10px;
+	width: 250px;
+	height: 200px;
+	background-color:brown;
+} */
+#letter ul{
+	list-style-type: none;
+	overflow: hidden;
+	padding:10px 20px;
+	float: left;
+	padding: 30px 20px 10px 100px;
+	text-align: left;
+}
+#letter li{
+	justify-content: center;
+	padding:10px 5px;
+	margin:10px 0px;
+	border: solid 0.5px dimgrey;
+	border-radius: 6px;
+}
+#letter i{
+	color: green;
+}
+
+
+.wrapper {
+	max-width: 1200px;
+	min-width: 1000px;
+	position: relative;
+	margin:0px 22px 0px 150px;
+  }
+.wrapper i {
+	top: 50%;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	font-size: 50px;
+	position: absolute;
+	text-align: center;
+	line-height: 50px;
+	background: rgb(22, 231, 161);
+	border-radius: 50%;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+	transform: translateY(-50%);
+	transition: transform 0.1s linear;
+  }
+.wrapper i:active{
+	transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+	left: -22px;
+  }
+.wrapper i:last-child{
+	right: -22px;
+  }
+.wrapper .carousel{
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: calc((100% / 3) - 12px);
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	gap: 16px;
+	border-radius: 8px;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+  }
+.carousel::-webkit-scrollbar {
+	display: none;
+  }
+  .carousel.no-transition {
+	scroll-behavior: auto;
+  }
+.carousel.dragging {
+	scroll-snap-type: none;
+	scroll-behavior: auto;
+  }
+.carousel.dragging .card {
+	cursor: grab;
+	user-select: none;
+  }
+.carousel :where(.card, .img) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+.carousel .card {
+	scroll-snap-align: start;
+	height: 342px;
+	min-width: 200px;
+	list-style: none;
+	background: aliceblue;
+	color: black;
+	cursor: pointer;
+	padding-bottom: 15px;
+	flex-direction: column;
+	border-radius: 8px;
+  }
+.carousel .card .img {
+	border: none;
+	height: 148px;
+	width: 148px;
+	border-radius: 50%;
+  }
+.card .img img {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	object-fit: cover;
+	
+  }
+.carousel .card h2 {
+	font-weight: 500;
+	font-size: 1.56rem;
+	margin: 30px 0 5px;
+  }
+.carousel .card span {
+	color: dimgrey;
+	font-size: 1.31rem;
+  }
+@media screen and (max-width: 900px) {
+	.wrapper .carousel {
+	  grid-auto-columns: calc((100% / 2) - 9px);
+	}
+  }
+@media screen and (max-width: 600px) {
+	.wrapper .carousel {
+	  grid-auto-columns: 100%;
+	}
+  }
+
+
+footer td{
+	padding:20px 0px 20px 0px;
+	border-left: solid black 0.5px;
+}
+footer .lg{
+	text-align: left;
+	padding-left:20%;
+	width: 50%;
+	min-width: 200px;
+}

@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Prices - DRIVE SYNC</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+	<h1><a href="index.html"><img src="images/logo.png" width="203" height="70" alt="ハピネスフィットネスクラブ"></a></h1>
+	<nav>
+		<ul>
+			<li><a href="info.html"><img src="images/nav1.png" width="173" height="50" alt="施設のご案内"></a></li>
+			<li><a href="fee.html"><img src="images/nav2.png" width="173" height="50" alt="料金プラン"></a></li>
+			<li><a href="opinion.html"><img src="images/nav3.png" width="173" height="50" alt="ご意見・ご要望"></a></li>
+		</ul>
+	</nav>
+</header>
+<div id="contents">
+	<div id="main">
+		<article >
+			<h1 style="font-family: 'Playfair'">Our design. Rich <br>
+				in expressiveness.</h1>
+			
+			<div class="slideshow-container">
+				<div class="mySlides">
+				  <img src="images/slide1.png" alt="Photo 1">
+				</div>
+				<div class="mySlides">
+				  <img src="images/slide2.png" alt="Photo 2">
+				</div>
+				<div class="mySlides">
+				  <img src="images/slide3.png" alt="Photo 3">
+				</div>
+				<div class="mySlides">
+				  <img src="images/slide4.png" alt="Photo 4">
+				</div>
+				<div class="mySlides">
+				  <img src="images/slide5.png" alt="Photo 5">
+				</div>
+			</div>
+			<!-- javascript -->
+			  <script>
+				var slideIndex = 0;
+				showSlides();
+			
+				function showSlides() {
+				  var slides = document.getElementsByClassName("mySlides");
+				  for (var i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				  }
+			
+				  slideIndex++;
+				  if (slideIndex > slides.length) {
+					slideIndex = 1;
+				  }
+			
+				  slides[slideIndex - 1].style.display = "block";
+			
+				  setTimeout(showSlides, 3000); // Change slide every 3 seconds (3000 milliseconds)
+				}
+			  </script>
+			<table border="" >
+				<caption>
+					<strong>PRICES</strong>
+					<p>Designed with a vision that never fades even with the passage of time, each pre-owned Rolls-Royce comes with a unique story and infinite possibilities waiting to be unravelled. Where will yours take you?</p>
+				</caption>
+				<tr >
+					<th scope="col">Image</th>
+					<th scope="col">Name</th>
+					<th scope="col" class="price">Price"$"</th>
+				</tr>
+				<tr>
+					<td><img src="images/priceghost.png" width="200px" height="100px" alt=""></td>
+					<td >GHOST</td>
+					<td class="price">2M</td>
+				</tr>
+				<tr>
+					<td><img src="images/pricespecter.png" width="200px" height="100px" alt=""></td>
+					<td>SPECTER</td>
+					<td class="price">3M</td>
+				</tr>
+				<tr>
+					<td><img src="images/pricephantom.png" width="200px" height="100px" alt=""></td>
+					<td>PHANTOM</td>
+					<td class="price">3.7M</td>
+				</tr>
+				<tr>
+					<td><img src="images/pricecullian.png" width="200px" height="100px" alt=""></td>
+					<td>CULLIAN</td>
+					<td class="price">3.2M</td>
+				</tr>
+	
+			</table>
+		</article>
+	</div>
+	<div id="sub">
+		<aside>
+			<ul>
+				<li><a href="info.html"><button data-text="Awesome" class="button">
+					<span class="actual-text">&nbsp;About&nbsp;</span>
+					<span class="hover-text" aria-hidden="true">&nbsp;About&nbsp;</span>
+				</button></a></li>
+				<li><a href="opinion.html"><button data-text="Awesome" class="button">
+					<span class="actual-text">&nbsp;Contacts&nbsp;</span>
+					<span class="hover-text" aria-hidden="true">&nbsp;Contacts&nbsp;</span>
+				</button></a></li>
+			</ul>
+		</aside>
+	</div>
+</div>
+<footer>
+	<p><small>Copyright &copy;2014 DRIVE SYNC CLUB All rights reserved.</small></p>
+</footer>
+
+</body>
+
+</html>

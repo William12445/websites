@@ -1,0 +1,248 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import url(common.css);
+header {
+	width: 800px;
+	height: 70px;
+	margin: 20px auto 40px auto;
+	position: relative;
+}
+header h1 {
+	margin : 0;
+	position: absolute;
+}
+nav {
+	position: absolute;
+	right: 0;
+}
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+nav ul li {
+	float: left;
+}
+nav ul li a:hover{
+	opacity: 0.7;
+}
+section{
+	font-family: 'Playfair', serif;
+	margin-bottom: 350px;
+}
+
+/* slide shows  >>>*/
+.slideshow-container {
+	position: relative;
+	width: 100%;
+	margin: auto;
+  }
+
+.mySlides {
+	display: none;
+	text-align: center;
+  }
+
+.mySlides img {
+	width: 100%;
+	height: auto;
+  }
+/*<<<< slide show */
+
+/* foooter >>>*/
+
+footer p {
+	position: fixed;
+	bottom: -50px;
+	width: 100%;
+	height: 50px;
+	padding: 14px 0 14px 0;
+	background-image: url(../images/bg_footer.png);
+	background-repeat: repeat-x;
+	text-align: center;
+
+}
+footer small{
+	font-size:100%;
+}
+/* <<<footer */
+
+
+#main h1{
+	background-image:url(../images/h1.png);
+	background-repeat:no-repeat;
+	padding:8px 0 3px 40px;
+	margin:0 0 20px 0;
+	font-size:162%;
+}
+/* 基本レイアウト ここまで↑ */
+
+/* 「施設のご案内」ページ ここから↓ */
+img.float_right{
+	margin-left:20px;
+	margin-bottom:20px;
+	float:right;
+}
+.float_clear{
+	clear:both;
+}
+article ul{
+	list-style-type: circle;
+}
+/* 「施設のご案内」ページ ここまで↑ */
+
+/* 「料金プラン」ページ ここから↓ */
+table{
+	width: 560px;
+	margin-bottom: 20px;
+	border-collapse: collapse;/*  border ko phyoke tr */
+}
+table caption{
+	text-align: left;
+}
+table th, table td{
+	border: 1px solid rgb(35, 55, 56);
+	padding: 10px;
+	width: 190px;
+	text-align: center;
+}
+table th{
+	background-color:rgb(111, 174, 174);
+}	
+table .price{
+	width: 125px;
+}
+table td.price{
+	text-align: center;
+}
+/* 「料金プラン」ページ ここまで↑ */
+
+/* 「ご意見・ご要望」ページ ここから↓ */
+
+form{
+	margin-top: 30px;
+}
+input.textfield,textarea{
+	border: 1px solid black;
+}
+input.textfield{
+	width: 250px;
+}
+input.textaera{
+	width: 500px;
+	height: 170px;
+	overflow-y: scroll;
+}
+input.subbtn{
+	background-color: black;
+	border-radius: 10px;
+	width: 80px;
+	height: 40px;
+	color: aliceblue;
+}
+/* 「ご意見・ご要望」ページ ここまで↑ */
+
+/* info contents buttons >>>>*/
+li .button {
+	margin: 0;
+	height: auto;
+	background: transparent;
+	padding: 0;
+	border: none;
+  }
+  
+  /* button styling */
+li .button {
+	--border-right: 6px;
+	-webkit-text-fill-color: #ffffffab;
+	--animation-color: #FFFF;
+	--fs-size: 2em;
+	letter-spacing: 3px;
+	text-decoration: none;
+	font-size: var(--fs-size);
+	font-family: "Arial";
+	position: relative;
+	text-transform: uppercase;
+	color: transparent;
+	-webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when hover on button */
+li .hover-text {
+	position: absolute;
+	box-sizing: border-box;
+	content: attr(data-text);
+	color: var(--animation-color);
+	width: 0%;
+	inset: 0;
+	border-right: var(--border-right) solid var(--animation-color);
+	overflow: hidden;
+	transition: 0.5s;
+	-webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+li .button:hover .hover-text {
+	width: 100%;
+	filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+/*<<<<<info contents buttons */
+
+/* sendbutton >>>>*/
+.subbtn {
+	position: relative;
+	outline: 0;
+	border: 1px solid transparent;
+	background-color: slategrey;
+	color: #ffffff;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0.75rem 1.5rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+	overflow: hidden;
+	box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+  }
+  
+  .subbtn span {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.75rem;
+	transition: all .4s ease;
+  }
+  
+  button svg {
+	width: 1.25rem;
+	height: 1.25rem;
+  }
+  
+  .subbtn span:nth-child(2),.subbtn span:nth-child(3) {
+	position: absolute;
+	top: 40px;
+	color: #fff;
+  }
+  
+  .subbtn span:nth-child(2) {
+	background-color:slategrey;
+  }
+  
+  .subbtn span:nth-child(3) {
+	background-color:slategrey;
+  }
+  
+.subbtn:focus span:nth-child(3) {
+	top: 0;
+  }
+  
+  .subbtn:focus {
+	box-shadow: none;
+  }
+/* <<<<<sendbutton*/

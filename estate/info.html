@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>estate</title>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+
+    </head>
+    <body>
+        <header >
+            <h1><img src="" alt="">logo</h1>
+            <nav>
+                <ul style=>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>About</li>
+                    <li>Project</li>
+                </ul>
+            </nav>
+            <button id="loginbtn"><i class="fi fi-sr-users"></i></button>
+        </header>
+        <div id="contents" >
+            <div id="main" 
+            style="height: 460px;min-width:1200px; margin:70px 5px -20px 5px ; background-image: url(images/bgmain.png);
+            background-repeat: no-repeat; padding-top: 100px;">
+                <h2 >   
+                    <strong>
+                        Find house with the best price<br>
+                        And quality here .
+                    </strong>
+                </h2>
+                <small>
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                    Aspernatur delectus nemo aliquid <br>
+                    similique fugit voluptates iure adipisci,
+                </small>
+                <!-- <div id="options">
+                    <input type="radio">Buy<input type="radio">Rent
+                    <ul style="padding: 0 0;">
+                       <li><input type="text" alt="location" placeholder="Location" ></li>
+                       <li><input type="date" min="2000-01-02" value="2000-01-02"></li>
+                       <li><input type="date" min="2000-01-02" value="2000-01-02"></li>
+                    </ul>
+                </div>-->
+                <ul > 
+
+                    <li>Location<i class="fi fi-rs-map-marker-home"></i> <br><input type="text" alt="location" placeholder="City/Ward/Street" ></li>
+                    <li>Start <br><input type="date" id="startDate" min="2000-01-02" value="start"></li>
+                    <li>End <br><input type="date" id="endDate" min="2000-01-02" ></li>
+                    <li><button id="search"></button></li>
+                </ul>
+                  
+                  <script>
+                    // Get the date input elements
+                    const startDateInput = document.getElementById('startDate');
+                    const endDateInput = document.getElementById('endDate');
+                  
+                    // Function to format the date as YYYY-MM-DD
+                    function formatDate(date) {
+                      const year = date.getFullYear();
+                      const month = String(date.getMonth() + 1).padStart(2, '0');
+                      const day = String(date.getDate()).padStart(2, '0');
+                      return `${year}-${month}-${day}`;
+                    }
+                  
+                    // Set the initial values to the current date
+                    const currentDate = new Date();
+                    startDateInput.value = formatDate(currentDate);
+                    endDateInput.value = formatDate(currentDate);
+                  
+                    // Update the values every day
+                    setInterval(() => {
+                      const currentDate = new Date();
+                      startDateInput.value = formatDate(currentDate);
+                      endDateInput.value = formatDate(currentDate);
+                    }, 24 * 60 * 60 * 1000); // Update every 24 hours
+                  </script>
+            </div>
+            <article style=" 
+            color: black;
+            background-color: aliceblue; 
+            height: 1050px;
+            margin-top: 20px;
+            padding-top: 20px;
+            min-width: 1200px;">
+                <h1 style="display: flex; justify-content: center; margin: 2px;">Why Should Choose Us?</h1>
+                <p style="text-align: center; display: flex ;justify-content: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                    Aspernatur delectus nemo aliquid <br>
+                    similique fugit voluptates iure adipisci,</p><br>
+                <table style="display: flex; justify-content: center; border-collapse: collapse;">
+                    <tr >
+                        <td><h1><i class="fi fi-rs-search"></i></h1></td>
+                        <td><h1><i class="fi fi-rs-hands-holding-diamond"></i></h1></td>
+                        <td><h1><i class="fi fi-rs-apartment"></i></h1></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Research Suburbs</strong></td>
+                        <td><strong>Instant Valuation</strong></td>
+                        <td><strong>Track Property</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Wonder twenty hunted and put <br>
+                            income set desire expect. it a Am <br>
+                            cottage calling.</td>
+                        <td>Conveying or northward offending <br>
+                            atting perfectly my, Colonel gravit <br>
+                            ect.</td>
+                        <td>Moderate children at of outweigh it. <br>
+                            Unsatiable it considered outweigh <br>
+                            It. Unsatiable it</td>
+                    </tr>
+                
+                </table>
+                <!-- <div id="images" style="position: absolute; margin: 20px 0px 0px 250px; 
+                height: 500px;">
+                    <ul>
+                        <li class="pl">a</li>
+                        <li class="ps">b</li>
+                        <li class="pl">a</li>
+                    </ul>
+                    <ul>
+                        <li class="ps">b</li>
+                        <li class="pl">a</li>
+                        <li class="ps">b</li>
+                    </ul>
+                </div>
+                
+                 -->
+                <table id="imagep" style="width: 200px; margin: 20px 0px 0px 200px;
+                height: 200px; float: left;">
+                    <tr>
+                        <td colspan="2"><img src="images/p1.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/p2.png" alt=""></td>
+                        <td><img src="images/p3.png" alt=""></td>
+                    </tr>
+                </table> 
+                <div id="letter" style=" text-align: center; padding: 30px;"> 
+
+                    <h1 >Commercial Business <br>
+                        Living </h1>
+                    <p>dsfasfdsfsd sfdsdfsafas adsfsdf <br>
+                    asfdasdf sdfadsfsd sdfs sdf sdfs</p>
+                    <ul style="list-style: none;
+                    ">
+                        <li><i class="fi fi-sr-badge-check"></i> Japanese Quality</li>
+                        <li><i class="fi fi-sr-badge-check"></i> Integrated Security</li>
+                        <li><i class="fi fi-sr-badge-check"></i> Grand Spaces</li>
+                    </ul>   
+                    <ul style="list-style: none; ">
+                        <li><i class="fi fi-sr-badge-check"></i> Healthy Layout</li>
+                        <li><i class="fi fi-sr-badge-check"></i> Modern Commercial</li>
+                        <li><i class="fi fi-sr-badge-check"></i> Integrated Security</li>
+                    </ul>   
+                    </i>
+                </div>
+                
+            </article>
+            <div class="black box" style="background-color: black; height:500px; min-width: 1400px; ">
+                
+                <div id="rightthings" style="float: left; padding:30px 0px 10px 100px;">
+                    <h1 style="padding-top: 20px; list-style: none;">We Will Give You The <br>
+                        Best Service</h1>
+                    <video width="500" height="300" autoplay muted loop style="margin: 0px; ">
+                        <source src="images/housevd.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div id="rightthings" style="float: right; padding:60px 100px 10px 0px;">
+                    <p style="padding:10px 0px 10px 0px;">Commercial Business Living Can Blending modern <br>
+                        Commercial Space With TO Everywhere. <br> Business Living Can Blending modern .</p>
+                    <img src="images/cave.png" height="280" width="550" alt="" >
+                </div>
+            </div>
+            <div class="wrapper">
+                <i id="left" class="fi fi-br-caret-left"></i>
+                <ul class="carousel">
+                  <li class="card">
+                    <div class="img"><img src="images/p1.png" alt="img" draggable="false"></div>
+                    <h2>Project1</h2>
+                    <span>Sales Manager</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/p2.png" alt="img" draggable="false"></div>
+                    <h2>Project2</h2>
+                    <span>Web Developer</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/p3.png" alt="img" draggable="false"></div>
+                    <h2>Project3</h2>
+                    <span>Online Teacher</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/p1.png" alt="img" draggable="false"></div>
+                    <h2>Project4</h2>
+                    <span>Freelancer</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/p2.png" alt="img" draggable="false"></div>
+                    <h2>Project5</h2>
+                    <span>Bank Manager</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="images/p3.png" alt="img" draggable="false"></div>
+                    <h2>Project6</h2>
+                    <span>App Designer</span>
+                  </li>
+                </ul>
+                <i id="right" class="fi fi-br-caret-right"></i>
+            </div>
+
+            
+        </div>
+        <footer style="background-color: white; color: #393E46; padding-top: 20px; min-width: 1300px;">
+            <table style="border-collapse: collapse; width: 100%; text-align: center;">
+                <tr>
+                    <th class="lg"><img src="" alt="">logo</th>
+                    <th>About</th>
+                    <th>Support</th>
+                    <th>Company</th>
+                    <th>About</th>
+                </tr>
+                <tr >
+                    <td class="lg" rowspan="2"><p>fsdafs <br> 
+                    dsfdsfsaf <br>
+                sdfsdfsfa</p></td>
+                    <td><small>About Us</small></td>
+                    <td><small>How it Works</small></td>
+                    <td><small>FAQs</small></td>
+                    <td><small>Documentation</small></td>
+                </tr>
+                <tr>
+                    <td><small>Features</small></td>
+                    <td><small>Term</small></td>
+                    <td><small>Support Center</small></td>
+                    <td><small>About Us</small></td>
+                </tr>
+                <tr>
+                    <td class="lg">
+                        <i class="fi fi-brands-facebook"></i>  
+                        <i class="fi fi-brands-twitter"></i> 
+                        <i class="fi fi-brands-instagram"></i>   
+                        <i class="fi fi-sr-share"></i></td>
+                        <td><small>News & Blog</small></td>
+                        <td><small>Privacy Policy</small></td>
+                        <td><small>Contact Us</small></td>
+                        <td><small>More</small></td>
+                </tr>
+
+            </table>
+        </footer>
+    </body>
+</html>
